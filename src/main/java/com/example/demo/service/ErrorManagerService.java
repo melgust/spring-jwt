@@ -7,16 +7,16 @@ import com.example.demo.utils.AppProperty;
 import com.example.demo.utils.ResponseResult;
 
 @Service
-public class errorManagerService {
+public class ErrorManagerService {
 
 	private boolean showException;
 	
 	@Autowired
-	public errorManagerService(AppProperty properties) {
+	public ErrorManagerService(AppProperty properties) {
 		this.showException = properties.getShowException() == 1;
 	}
 	
-	public String manejarExcepcion(Exception e) {
+	public String managerException(Exception e) {
 		if (this.showException) {
 			return e.getMessage();
 		}

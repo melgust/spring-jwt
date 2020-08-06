@@ -4,16 +4,16 @@ import java.util.List;
 
 public class ApiResponse {
 
-	private String status;
+	private int status;
 	private String message;
 	private List<?> data;
 	private String singleValue;
 
-	public String getStatus() {
+	public int getStatus() {
 		return this.status;
 	}
 
-	public void setStatus(String status) {
+	public void setStatus(int status) {
 		this.status = status;
 	}
 
